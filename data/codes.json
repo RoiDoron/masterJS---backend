@@ -1,0 +1,38 @@
+[
+    {
+        "_id": "1",
+        "name": "Async Case",
+        "initialCode": "function fetchData() {\n    // Add your async code here\n    return new Promise((resolve) => {\n        setTimeout(() => resolve('Data fetched!'), 1000);\n    });\n}",
+        "solution": "async function fetchData() {\n    const response = await new Promise((resolve) => {\n        setTimeout(() => resolve('Data fetched!'), 1000);\n    });\n    return response;\n}",
+        "difficulty": "medium",
+        "createdAt": "2024-11-24T10:00:00Z",
+        "updatedAt": "2024-11-24T10:00:00Z"
+    },
+    {
+        "_id": "2",
+        "name": "Sum of Even Numbers",
+        "initialCode": "function sumOfEvens(arr) {\n    // Your code here\n    return 0;\n}",
+        "solution": "function sumOfEvens(arr) {\n    return arr.filter(num => num % 2 === 0).reduce((sum, num) => sum + num, 0);\n}",
+        "difficulty": "easy",
+        "createdAt": "2024-11-24T10:15:00Z",
+        "updatedAt": "2024-11-24T10:15:00Z"
+    },
+    {
+        "_id": "3",
+        "name": "Reverse String",
+        "initialCode": "function reverseString(str) {\n    // Add your code here\n    return str;\n}",
+        "solution": "function reverseString(str) {\n    return str.split('').reverse().join('');\n}",
+        "difficulty": "easy",
+        "createdAt": "2024-11-24T10:30:00Z",
+        "updatedAt": "2024-11-24T10:30:00Z"
+    },
+    {
+        "_id": "4",
+        "name": "For loop example 2",
+        "initialCode": "for (let i = 0; i < 5; i++) {\n  console.log(i); // Your task is to skip number 2\n}",
+        "solution": "for (let i = 0; i < 5; i++) {\n  if (i === 2) {\n    continue;\n  }\n  console.log(i);\n}",
+        "difficulty": "medium",
+        "createdAt": "2024-11-24T10:45:00Z",
+        "updatedAt": "2024-11-24T10:45:00Z"
+    }
+]
